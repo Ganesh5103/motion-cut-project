@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footwear men</title>
+    <link rel="stylesheet" href="script.css" type="text/css" />
+    <link rel="stylesheet" href="utility.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="grid.css"/>
+</head>
+<body>
+<header class="container">
+        <nav class="flex space-bw navbar">
+            <div class="left flex item-center">
+                <a href="shop.xhtml"><img src="image/logo.png" alt="" style="padding-left: 10px;" /></a>
+                <ul class="flex item-center justify-center uppercase semibold">
+                    <li style="padding:20px;
+                    font-size:20px;"><a href="men.xhtml">Men</a>
+                        <ul>
+                            <li><a href="menjeans.xhtml">Jeans</a></li>
+                            <li><a href="menshirts.xhtml">Shirts</a></li>
+                            <li><a href="menfoot.xhtml">Footwear</a></li>
+                            <li><a href="menwatch.xhtml">Watches</a></li>
+                            <!-- Add more subcategories as needed -->
+                        </ul>
+                    </li>
+                    <li style="padding:20px;
+                    font-size:20px;"><a href="women.xhtml">Women</a>
+                        <ul>
+                            <li><a href="womenjeans.xhtml">Jeans</a></li>
+                            <li><a href="womentops.xhtml">Tops</a></li>
+                            <li><a href="womenfoot.xhtml">Shoes</a></li>
+                            <li><a href="womenwatch.xhtml">Watches</a></li>
+                            <!-- Add more subcategories as needed -->
+                        </ul>
+                    </li>
+                    <li style="padding:20px;
+                    font-size:20px;"><a href="kids.xhtml">Kids</a>
+                        <ul>
+                            <li><a href="#">Western for boys</a></li>
+                            <li><a href="#">Traditional for boys</a></li>
+                            <li><a href="#">Western for Girls</a></li>
+                            <li><a href="#">Traditional for Girls</a></li>
+                            <!-- Add more subcategories as needed -->
+                        </ul>
+                    </li>
+                    <li style="padding:20px;
+                    font-size:20px;"><a href="fashion.xhtml">Home&amp;Living</a>
+                        <ul>
+                            <li><a href="furniture.xhtml">Furniture</a></li>
+                            <li><a href="homeappliances.xhtml">Home Appliances</a></li>
+                            <!-- Add more subcategories as needed -->
+                        </ul>
+                    </li>
+                    <!-- <li style="padding:20px"><a href="#">Beauty</a>
+                        <ul>
+                            <li><a href="#">Perfumes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li> -->
+                    <li style="padding:20px;
+                    font-size:20px;"><a href="studio.xhtml">Studio</a>
+                        <!-- <ul>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="right flex semibold">
+                <input type="text" style="height: 35px; width: 450px; margin-top: 36px; border: 2px black; background-color: rgb(249, 246, 246);" placeholder="Search for products, brands and more" id="searchInput"/>
+                <button onclick="search()" style="height: 35px;margin-top: 36px;cursor: pointer;">Search</button>
+                <div class="profile mx2 icon">
+                    <img src="image/profile.jpeg" height="30px" width="35px" alt="Profile" />
+                    Profile
+                    <div class="subnav">
+                    <p>
+                        <h3>  Welcome <br/></h3>
+                        To access and manage your Orders
+                    </p>
+                    <button class="button" id="login" onclick="window.open('login.xhtml',targert='_self')">Login/Signup</button>
+                    <a href="#">Settings</a>
+                    <a href="#">Orders</a>
+                    <!-- <a href="#">Sign Out</a> -->
+                </div>
+
+                </div>
+                <div class="wishlist mx2 icon">
+                    <img src="image/wishlist.png" height="30px" width="35px" alt="Wishlist" />
+                    Wishlist
+                </div>
+                <div class="bag mx2 icon">
+                    <img src="image/bag.png" height="30px" width="45px" alt="Bag" />
+                    <span style="margin-left: 13px;">    Bag</span>
+                </div>
+            </div>
+        </nav>
+    </header>     <div class="grid-container">
+        <div class="grid-item">
+            <a href="#">
+                <img src="image/sneakers men.jpeg" alt="" />
+                <div class="text-overlay">
+                    Sneakers
+                </div>
+            </a>
+        </div>
+        <div class="grid-item"><a href=""><img src="image/sportsmen.jpeg" alt=""/></a><div class="text-overlay">
+                    Sports Shoe
+                </div></div>
+        <div class="grid-item"><a href="#"><img src="image/slidesmen.jpeg" alt=""/><div class="text-overlay">
+                    Slides
+                </div></a></div>
+        <div class="grid-item"><a href="#"><img src="image/slipmen.jpg" alt=""/><div class="text-overlay">
+                    Slippers
+                </div></a></div>
+        <div class="grid-item"><a href="#"><img src="image/sandal men.jpeg" alt=""/><div class="text-overlay">
+                    Sandal
+                </div></a></div>
+        <div class="grid-item"><a href="#"><img src="image/tramen.jpeg" alt=""/><div class="text-overlay">
+                    Traditional
+                </div></a></div>
+        <div class="grid-item"><a href="#"><img src="image/loofersman.jpeg" alt=""/><div class="text-overlay">
+                    Loofers
+                </div></a></div>
+        <div class="grid-item"><a href="#"><img src="image/casualmen.jpeg" alt=""/><div class="text-overlay">
+                    Casual Shoe
+                </div></a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

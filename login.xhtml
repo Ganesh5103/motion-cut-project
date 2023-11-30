@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <link rel="stylesheet" href="script.js" />
+    <title>Login Page</title>
+    <script type="text/javascript">
+      function myfunction() {
+        // window.open("shopd.xhtml", (target = "_self"));
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        
+        if (username === '' || password === '') {
+          alert("Please enter both username and password.");
+          return;
+        }
+        var encodedUsername = encodeURIComponent(username);
+        var targetURL = "shopd.xhtml?uname=" + encodedUsername;
+         window.open(targetURL, "_blank");
+      }
+    </script>
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        background-color:white;
+      }
+
+      .container {
+        /* max-width: 400px; */
+        width: 600px;
+        height: 250px;
+        margin: 200px auto;
+        background-color: #f1eaea;
+        border-radius: 15px;
+        box-shadow: 0 0 30px rgba(88, 82, 105, 0.6);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        /* background-image: image('logo.png'); */
+      }
+
+      h1 {
+        color: #db7f7f;
+        margin-bottom: 30px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #49d950;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form>
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
+          required="required"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required="required"
+        />
+        <br/>
+        <button onclick="myfunction()">Log in</button>
+      </form>
+    </div>
+  </body>
+</html>

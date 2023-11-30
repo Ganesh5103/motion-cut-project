@@ -1,0 +1,109 @@
+.flex{
+    display: flex;
+
+}
+.item-center{
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.space-bw{
+    justify-content: space-between;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.semibold{
+    font-weight: bolder;
+}
+.mx2{
+    margin: 26px 10px;
+}
+.icon{
+    display: flex; 
+    flex-direction: column; 
+    font-size: 13px;
+}
+header a:hover{
+    transform: scale(1.2);
+    /* color: red; */
+}
+.frame{
+    width: 100%;
+    
+}
+.navbar ul li:hover ul {
+    display: block;
+}
+.navbar li:hover {
+    transform: scale(1.1);
+    
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    top: 62px;
+    background-color: #faf7f7;
+    padding: 0px;
+}
+
+.navbar ul li ul li {
+    font-size: 15px;
+    display: block;
+}
+.subnav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    background-color: #fff;
+    z-index: 1;
+    width: 170px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.profile:hover .subnav {
+    display: block;
+}
+
+.subnav a {
+    display: block;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.subnav a:hover {
+    background-color: #f1f1f1;
+}
+.mx2 div{
+
+    color: rgb(219, 139, 202);
+}
+.button{
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 100px;
+}
+.button:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+    color: red;
+}
+a:hover{
+    color: red;
+}

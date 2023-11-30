@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1996/xhtml">
+<head>
+   <title>Dynamic table</title>
+</head>
+<body>
+<form onsubmit="return dynamic()" action="#">
+   First Name <input type="text" name="fname" id="fname"/>
+   Last Name <input type="text" name="lname" id="lname"/><br>
+   <button type="submit">Click Here</button>
+</form>
+<table id="table" border="1">
+   <tr>
+   <th>First Name</th>
+   <th>Last Name</th>
+   </tr>
+</table>
+<script>
+//<![CDATA[
+function dynamic(){
+var x=document.getElementById("table");
+var row=x.insertRow();
+var a=document.getElementById("fname").value;
+var b=document.getElementById("lname").value;
+var c1=row.insertCell();
+var c2=row.insertCell();
+c1.innerHTML=a;
+c2.innerHTML=b;
+return false;
+}
+//]]>
+</script>
+</body>
+</html>
